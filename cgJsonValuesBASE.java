@@ -1,26 +1,32 @@
 package net.code_grove.json.gson;
 
 /**
- * @author: Micah Breedlove <Micah@BlueShamrockDev.com> <DruiD@Code-Grove.net>; `
+ * @author: Micah Breedlove <Micah@BlueShamrockDev.com> .::. <DruiD@Code-Grove.net>;
  * @package: net.code_grove.json.gson;
  *
- * The entire purpose of this package is to test out gson/json stuff that 
- * was destine to be broken sooner-or-later inside the GGekko android app (com.blueshamrockdev.badbear.android.ggekko).
+ * This class exists for the sole purpose of instantiating variables and 
+ * defining getters and setters.
+ *
+ * www.code-grove.net
  *
  **/
  
 abstract public class cgJsonValuesBASE 
 {
+  /**
+   * Define your values which are destined to be in your json String here
+   *
+   **/
   private String savedValues = "";
   private String name = "";
   private String tree1 = "";
   private String tree2 = "";
   private String tree3 = "";
  
-  public static void main(String[] args)
-  {
-  }
-
+  /**
+   * Define your Getters and Setters 
+   *
+   **/
   /**
    * Getters-n-Setters
    * lumped by value 
