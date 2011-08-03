@@ -1,2 +1,22 @@
 cgJsonAdaptor package - net.code_grove.json.gson
-druid@code-grove.net
+**Contact Email**: druid@code-grove.net
+**Requirements**: gson Libraries - http://code.google.com/p/google-gson/  
+**Usage**:  
+     // // Encoding
+     // instantiate Values class
+     cgJsonValues obj = new cgJsonValues();
+     // define values
+        obj.setName("Code Grove");
+        obj.setTree1("Oak");
+        obj.setTree2("Redwood");
+        obj.setTree3("Java");
+     cgJsonAdaptor json = new cgJsonAdaptor(obj);
+     String blah = json.getJson(); 
+     System.out.println(blah); 
+     // output: {"savedValues":"","name":"Code Grove","tree1":"Oak","tree2":"Redwood","tree3":"Java"}`
+
+     // // Decoding
+     cgJsonValues decoded = json.deSerializeJson(blah);
+     System.out.println(decoded.getName()); // output: Code Grove
+     System.out.println(decoded.getTree1()); // output: Oak
+     System.out.println(decoded.getTree3()); // output: Java
