@@ -1,5 +1,5 @@
-# **cgJsonAdaptor package** # 
-## *net.code\_grove.json.gson* ##  
+# **cgJsonAdaptor package**
+## *net.code\_grove.json.gson*
 ---
 **Contact Email**: druid@code-grove.net  
 **Requirements**: [gson Libraries](http://code.google.com/p/google-gson/)  
@@ -14,6 +14,7 @@
 **Author's Note**: I hope that at least someone finds this useful. I know I did ;)   
 
 **Usage**:  
+`
      // // Encoding
      // instantiate Values class
      cgJsonValues obj = new cgJsonValues();
@@ -32,3 +33,4 @@
      System.out.println(decoded.getName()); // output: Code Grove
      System.out.println(decoded.getTree1()); // output: Oak
      System.out.println(decoded.getTree3()); // output: Java
+`
