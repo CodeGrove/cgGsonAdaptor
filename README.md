@@ -10,27 +10,27 @@
   do something about it. The contents of this package include:  
 1. cgJsonAdaptor - the actual file handling the json/gson manipulation  
 2. cgJsonValuesBASE - the customizable Base class which allows you to set your json values and their getters and setters  
-3. cgJsonValues - an extention of the Base Json Values class which is where any project specific data manipulation would go 
+3. cgJsonValues - an extention of the Base Json Values class which is where any project specific data manipulation would go  
+
 **Author's Note**: I hope that at least someone finds this useful. I know I did ;)   
 
 **Usage**:  
-`
+
      // // Encoding
      // instantiate Values class
      cgJsonValues obj = new cgJsonValues();
      // define values
-        obj.setName("Code Grove");
-        obj.setTree1("Oak");
-        obj.setTree2("Redwood");
-        obj.setTree3("Java");
+      obj.setName("Code Grove");
+      obj.setTree1("Oak");
+      obj.setTree2("Redwood");
+      obj.setTree3("Java");
      cgJsonAdaptor json = new cgJsonAdaptor(obj);
      String blah = json.getJson(); 
      System.out.println(blah); 
      // output: {"savedValues":"","name":"Code Grove","tree1":"Oak","tree2":"Redwood","tree3":"Java"}`
-
+  
      // // Decoding
      cgJsonValues decoded = json.deSerializeJson(blah);
      System.out.println(decoded.getName()); // output: Code Grove
      System.out.println(decoded.getTree1()); // output: Oak
      System.out.println(decoded.getTree3()); // output: Java
-`
