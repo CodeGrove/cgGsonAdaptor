@@ -33,7 +33,7 @@ public class cgJsonAdaptor
   }
 
 
-  public static String getJson()
+  public String getJson()
   {
 	   Gson gson = new Gson();
 	  // convert java object to JSON format
@@ -42,7 +42,7 @@ public class cgJsonAdaptor
     return json;
   }
 
-  public static cgJsonValues deSerializeJson(String serializedValue)
+  public cgJsonValues deSerializeJson(String serializedValue)
   {
 	   Gson gson = new Gson();
      // decode json string into a populated  cgJsonValues file
