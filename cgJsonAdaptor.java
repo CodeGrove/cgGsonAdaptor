@@ -32,6 +32,10 @@ public class cgJsonAdaptor
      sv = incoming;
   }
 
+  public String toString()
+  {
+    return this.getJson();
+  }
 
   public static String getJson()
   {
