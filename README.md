@@ -27,6 +27,7 @@
      cgJsonAdaptor json = new cgJsonAdaptor(obj);
      String blah = json.getJson(); 
      System.out.println(blah); 
+     System.out.println(json.toString()); 
      // output: {"savedValues":"","name":"Code Grove","tree1":"Oak","tree2":"Redwood","tree3":"Java"}`
   
      // // Decoding
