@@ -1,4 +1,4 @@
-# **cgGsonAdaptor package**
+# **cgGsonAdaptor package** ![Project status](http://stillmaintained.com/CodeGrove/cgGsonAdaptor.png)
 ## *net.code\_grove.json.gson*
 ---
 **Contact Email**: druid@code-grove.net  
